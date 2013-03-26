@@ -1007,10 +1007,11 @@
 
     rulesCommand.prototype.functionality = function() {
       var msg;
-      msg = "1) Play good sound quality music. ";
+      msg = "1) Play good genre related music. ";
       msg += "2) Don't replay a song on the room history.";
       msg += "3) Max song limit 8 minutes.";
       msg += "4) Try to keep from going AFK.";
+      msg += "5) Respect Admins and Mods.
       return API.sendChat(msg);
     };
 
