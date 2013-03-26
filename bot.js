@@ -954,7 +954,7 @@
 
     whyWootCommand.prototype.functionality = function() {
       var msg, nameIndex;
-      msg = "We dislike AFK djs. We calculate your AFK status by checking the last time you  		Woot'd or spoke. If you don't woot, I'll automagically remove you. Use our AutoWoot			script to avoid being removed: http://bit.ly/McZdWw";
+      msg = "We dislike AFK djs. We calculate your AFK status by checking the last time you    	Woot'd or spoke. If you don't woot, I'll automagically remove you. Use our AutoWoot			script to avoid being removed: http://bit.ly/McZdWw";
       if ((nameIndex = this.msgData.message.indexOf('@')) !== -1) {
         return API.sendChat(this.msgData.message.substr(nameIndex) + ', ' + msg);
       } else {
@@ -1007,11 +1007,10 @@
 
     rulesCommand.prototype.functionality = function() {
       var msg;
-      msg = "1) Play good genre related music. ";
+      msg = "1) Play good sound quality music. ";
       msg += "2) Don't replay a song on the room history.";
       msg += "3) Max song limit 8 minutes.";
       msg += "4) Try to keep from going AFK.";
-      msg += "5) Respect Admins and Mods.
       return API.sendChat(msg);
     };
 
@@ -1607,7 +1606,7 @@
     };
 
     overplayedCommand.prototype.functionality = function() {
-      return API.sendChat("View the list of songs we consider overplayed and suggest additions at http://den.johnback.us/overplayed_tracks");
+      return API.sendChat("That song is so overplayed! Make a fresh playlist!");
     };
 
     return overplayedCommand;
