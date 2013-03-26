@@ -1008,10 +1008,10 @@
     rulesCommand.prototype.functionality = function() {
       var msg;
       msg = "1) Play good sound quality music. ";
-      msg += "2) Don't replay a song on the room history.";
-      msg += "3) Max song limit 8 minutes.";
-      msg += "4) Try to keep from going AFK.";
-      msg += "5) Be respectful to Admins and Mods.";
+      msg += "2) Don't replay a song on the room history. ";
+      msg += "3) Max song limit 8 minutes. ";
+      msg += "4) Try to keep from going AFK. ";
+      msg += "5) Be respectful to Admins and Mods. ";
       return API.sendChat(msg);
     };
 
@@ -1035,12 +1035,12 @@
 
     roomHelpCommand.prototype.functionality = function() {
       var msg1, msg2;
-      msg1 = "Welcome to the Dubstep Den! Create a playlist and populate it with songs from either YouTube or Soundcloud.  ";
-      msg1 += "Click the 'Join Waitlist' button and wait your turn to play music. Most electronic music allowed, type '/theme' for specifics.";
-      msg2 = "Stay active while waiting to play your song or I'll remove you.  Play good quality music that hasn't been played recently (check room history).  ";
-      msg2 += "Avoid over played artists like Skrillex. Ask a mod if you're unsure about your song choice";
+      msg1 = "Welcome to the Hideout! Create a playlist and populate it with songs from either YouTube or Soundcloud.  ";
+      msg1 += "Click the 'Join Waitlist' button and wait your turn to play music. To see what music genres are allowed, type '/theme'.";
+      msg2 = "Play good quality music that hasn't been played recently (check room history).  ";
+      msg2 += "Ask a mod if you're unsure about your song choice.";
       API.sendChat(msg1);
-      return setTimeout((function() {
+      return setTimeout((function() { 
         return API.sendChat(msg2);
       }), 750);
     };
