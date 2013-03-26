@@ -982,7 +982,7 @@
 
     themeCommand.prototype.functionality = function() {
       var msg;
-      msg = "Genres prefered in the Hideout are, Hip Hop, Jazz, Instrumental, and anything that's pleasent to the ears.", ";
+      msg = "Genres prefered in the Hideout are, Hip Hop, Jazz, Instrumental, and anything that's pleasent to the ears.";
       msg += "Keep the music related to the room theme, or we will have to force skip.";
       return API.sendChat(msg);
     };
