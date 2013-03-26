@@ -1360,7 +1360,7 @@
     };
 
     lockCommand.prototype.functionality = function() {
-      API.sendChat('Pop and lock dat ish');
+      API.sendChat('Locking Booth.');
       return data.lockBooth();
     };
 
@@ -1383,7 +1383,7 @@
     };
 
     unlockCommand.prototype.functionality = function() {
-      API.sendChat('You\'ll never get the key to unlock my heart');
+      API.sendChat('Unlocking Booth.');
       return data.unlockBooth();
     };
 
