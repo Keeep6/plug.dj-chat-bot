@@ -1586,7 +1586,7 @@
       return API.sendChat(msg);
     };
 
-    fbCommand.prototype.msgs = ["If you have any questions, suggestions, or just simply want to talk.  Message me on facebook!: {fb}";
+    fbCommand.prototype.msgs = ["If you have any questions, suggestions, or just simply want to talk.  Message me on facebook!: {fb}"];
 
     return fbCommand;
 
