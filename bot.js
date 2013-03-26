@@ -1588,7 +1588,7 @@
         }
         API.sendChat('Not sure who ' + name + ' is');
       } else {
-        API.sendChat('Yo Gimme a name r-tard');
+        API.sendChat('What is that name again');
       }
     };
 
@@ -1646,11 +1646,11 @@
     fbCommand.prototype.functionality = function() {
       var m, msg;
       m = Math.floor(Math.random() * this.msgs.length);
-      msg = this.msgs[m].replace('{fb}', 'http://on.fb.me/HNzK5S');
+      msg = this.msgs[m].replace('{fb}', 'https://www.facebook.com/aBlueScholar5');
       return API.sendChat(msg);
     };
 
-    fbCommand.prototype.msgs = ["Don't have any friends in real life? That's ok, we'll be your friend.  Join our facebook group: {fb}", "Wondering what TIMarbury looks like?  Join our facebook group ({fb}) and find out for yourself!", "We have a facebook group. Join it. Please. {fb}", "The Dubstep Den is now on friendster! lol just kidding.  Here's our facebook group: {fb} you should join.", "I bet you're handsome.  Join our facebook group so me0w can stalk your photos: {fb}"];
+    fbCommand.prototype.msgs = ["Have any questions, suggestions, or just simply want to talk? Message me on facebook: {fb}];
 
     return fbCommand;
 
@@ -1671,7 +1671,7 @@
     };
 
     overplayedCommand.prototype.functionality = function() {
-      return API.sendChat("View the list of songs we consider overplayed and suggest additions at http://den.johnback.us/overplayed_tracks");
+      return API.sendChat("Lame! This song is so overplayed!");
     };
 
     return overplayedCommand;
@@ -1967,7 +1967,7 @@
   handleUserJoin = function(user) {
     data.userJoin(user);
     data.users[user.id].updateActivity();
-    return API.sendChat("/em: " + user.username + " has joined the Room!");
+    return API.sendChat("/em: " + user.username + " has joined the Hideout!");
   };
 
   handleNewSong = function(obj) {
