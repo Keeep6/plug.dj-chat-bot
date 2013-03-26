@@ -982,7 +982,7 @@
 
     themeCommand.prototype.functionality = function() {
       var msg;
-      msg = "Genres prefered in the Hideout are, Hip Hop, Jazz, Instrumental, and anything that's pleasent to the ears.";
+      msg = "Genres prefered in the Hideout are, Hip Hop, Jazz, Instrumental, and anything that's pleasent to the ears. ";
       msg += "Keep the music related to the room theme, or we will have to force skip.";
       return API.sendChat(msg);
     };
@@ -1011,6 +1011,7 @@
       msg += "2) Don't replay a song on the room history.";
       msg += "3) Max song limit 8 minutes.";
       msg += "4) Try to keep from going AFK.";
+      msg += "5) Be respectful to Admins and Mods.";
       return API.sendChat(msg);
     };
 
