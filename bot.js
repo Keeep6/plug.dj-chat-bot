@@ -1582,7 +1582,7 @@
     fbCommand.prototype.functionality = function() {
       var m, msg;
       m = Math.floor(Math.random() * this.msgs.length);
-      msg = this.msgs[m].replace('{fb}', 'https://fb.me/aBlueScholar5');
+      msg = this.msgs[m].replace('{fb}', 'https:/www.facebook.com/aBlueScholar5');
       return API.sendChat(msg);
     };
 
