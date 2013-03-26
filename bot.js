@@ -620,7 +620,7 @@
           }
         }
       }
-      API.sendChat("That aint no name I ever did see");
+      API.sendChat("What is that name again?");
     };
 
     return protectCommand;
@@ -982,8 +982,8 @@
 
     themeCommand.prototype.functionality = function() {
       var msg;
-      msg = "Any type of Bass Music is allowed here. Including Dubstep, Complextro, Drum and Bass, ";
-      msg += "Garage, Breakbeat, Hardstyle, Moombahton, HEAVY EDM, House, Electro, and Trance!!";
+      msg = "Genres prefered in the Hideout are, Hip Hop, Jazz, Instrumental, and anything that's pleasent to the ears.", ";
+      msg += "Keep the music related to the room theme, or we will have to force skip.";
       return API.sendChat(msg);
     };
 
