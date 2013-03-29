@@ -362,7 +362,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("Bot Online!");
+    return API.sendChat("I'm here to help!");
   };
 
   populateUserData = function() {
