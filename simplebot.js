@@ -902,8 +902,8 @@
 
     rulesCommand.prototype.functionality = function() {
       var msg;
-      msg = "1) Play good sound quality music. ";
-      msg += "2) Don't replay a song on the room history. ";
+      msg = "1) Play good genre related music. ";
+      msg += "2) If a song gets more 'Mehs' than 'Woots', it will be skipped. ";
       msg += "3) Max song limit 8 minutes. ";
       msg += "4) Try to keep from going AFK. ";
       msg += "5) Be respectful to Admins and Mods. ";
@@ -1798,29 +1798,7 @@
   handleUserJoin = function(user) {
     data.userJoin(user);
     data.users[user.id].updateActivity();
-    return API.sendChat("/em: " + user.username + " has joined the Hideout!");
-  };
-
-  handleNewSong = function(obj) {
-    var songId;
-    data.intervalMessages();
-    if (data.currentsong === null) {
-      data.newSong();
-    } else {
-      API.sendChat("/em: Just played " + data.currentsong.title + " by " + data.currentsong.author + ". Stats: Woots: " + data.currentwoots + ", Mehs: " + data.currentmehs + ", Loves: " + data.currentcurates + ".");
-      data.newSong();
-      document.getElementById("button-vote-positive").click();
-    }
-    if (data.forceSkip) {
-      songId = obj.media.id;
-      return setTimeout(function() {
-        var cMedia;
-        cMedia = API.getMedia();
-        if (cMedia.id === songId) {
-          return API.moderateForceSkip();
-        }
-      }, obj.media.duration * 1000);
-    }
+    return API.sendChat("/em: " + user.username + " has joined the Hideout! Welcome!");
   };
 
   handleVote = function(obj) {
