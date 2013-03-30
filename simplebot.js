@@ -735,7 +735,7 @@
       icecream = this.randomIcecream();
       if (msg.substring(5, 6) === "@") {
         icecreamName = msg.substring(6);
-        if (icecreamName === '#Wolf Pup') {
+        if (icecreamName === 'Hideout Helper') {
           return API.sendChat("No thanks I'll get fat :(");
         } else {
           return API.sendChat("Yo @" + icecreamName + ", " + this.msgData.from + " just gave you some " + icecream + "!");
@@ -774,9 +774,9 @@
       var msg, taco, tacoName;
       msg = this.msgData.message;
       taco = this.randomTaco();
-      if (msg.substring(5, 6) === "@") {
-        tacoName = msg.substring(6);
-        if (tacoName === '#Wolf Pup') {
+      if (msg.substring(8, 11) === "@") {
+        tacoName = msg.substring(11);
+        if (tacoName === 'Hideout Helper') {
           return API.sendChat("No thanks I'll get fat :(");
         } else {
           return API.sendChat("Yo @" + tacoName + ", " + this.msgData.from + " just gave you a " + taco + "!");
