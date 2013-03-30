@@ -561,7 +561,7 @@
           case "punish":
             resp = "Mod only command.  Punish a user in one of several methods.  For naughty users.  Syntax: punish @user";
             break;
-          case "slap"
+          case "slap":
             resp = "Mod only command.  Slap a user.  For naughty users.  Syntax:  slap @user":
             break;
           case "/whywoot":
