@@ -846,7 +846,7 @@
 
     punishCommand.prototype.getPunishment = function(username) {
       var p, punishment, punishments;
-      punishments = ["/me rubs sandpaper on @{victim}'s scrotum", "/me pokes @{victim} in the eyes", "/me throws sand in @{victim}'s eyes", "/me makes @{victim}'s mother cry", "/me penetrates @{victim} with a sharpie", "/me pinches @{victim}'s nipples super hard", "/me gives @{victim} a wet willy"];
+      punishments = ["/me rubs sandpaper on @{victim}'s scrotum", "/me pokes @{victim} in the eyes", "/me throws sand in @{victim}'s eyes", "/me makes @{victim}'s mother cry", "/me penetrates @{victim} with a sharpie", "/me pinches @{victim}'s nipples super hard", "/me gives @{victim} a wet willy", "/me slaps @{victim}", "/me hits @{victim} over the head with a baseball bat"];
       p = Math.floor(Math.random() * punishments.length);
       punishment = punishments[p].replace('{victim}', username);
       return punishment;
