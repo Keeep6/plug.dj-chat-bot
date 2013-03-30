@@ -756,7 +756,7 @@
     cookieCommand.prototype.init = function() {
       this.command = 'cookie';
       this.parseType = 'startsWith';
-      return this.rankPrivelege = 'mod';
+      return this.rankPrivelege = 'user';
     };
 
     cookieCommand.prototype.getCookie = function() {
