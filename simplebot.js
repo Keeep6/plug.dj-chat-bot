@@ -849,7 +849,7 @@
 
     complimentCommand.prototype.getCompliment = function(username) {
       var c, compliment, compliment;
-      compliments = [" @{user}, you have a great taste in music! ", " @{user}, nice choice of song! ", " @{user}, you must have a great playlist! ", " @{user}, you should be a radio DJ!", " @{victim}, where did you find this hidden gem!?"];
+      compliments = ["@{user}, you have a great taste in music! ", "@{user}, nice choice of song! ", "@{user}, you must have a great playlist! ", "@{user}, you should be a radio DJ!", "@{user}, where did you find this hidden gem!?"];
       c = Math.floor(Math.random() * compliments.length);
       compliment = compliments[c].replace('{user}', username);
       return compliment;
@@ -859,8 +859,8 @@
       var msg, name, r, user;
       msg = this.msgData.message;
       r = new RoomHelper();
-      if (msg.length > 12) {
-        name = msg.substr(12);
+      if (msg.length > 11) {
+        name = msg.substr(11);
         user = r.lookupUser(name);
         if (user === false) {
           API.sendChat("/me punishes @" + this.msgData.from + " for getting the syntax wrong.");
