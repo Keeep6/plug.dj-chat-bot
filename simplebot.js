@@ -553,7 +553,7 @@
             resp = "order a yummy taco.  simply say 'taco' or give on to someone else by saying 'taco @user'";
             break;
           case "cookie":
-            resp = "Mod only command.  Reward a user with a sweet treat!  Syntax: cookie @user";
+            resp = "Reward a user with a sweet treat!  Syntax: cookie @user";
             break;
           case "punish":
             resp = "Mod only command.  Punish a user in one of several methods.  For naughty users.  Syntax: punish @user";
@@ -756,7 +756,7 @@
     cookieCommand.prototype.init = function() {
       this.command = 'cookie';
       this.parseType = 'startsWith';
-      return this.rankPrivelege = 'user';
+      return this.rankPrivelege = 'mod';
     };
 
     cookieCommand.prototype.getCookie = function() {
