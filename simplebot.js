@@ -694,7 +694,7 @@
     }
 
     hugCommand.prototype.init = function() {
-      this.command = 'hugs pup';
+      this.command = 'hug';
       this.parseType = 'exact';
       return this.rankPrivelege = 'user';
     };
