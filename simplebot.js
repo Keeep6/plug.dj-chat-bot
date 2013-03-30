@@ -1812,7 +1812,7 @@
 
   })(Command);
 
-  cmds = [hugCommand, tacoCommand, cookieCommand, punishCommand, whyWootCommand, themeCommand, rulesCommand, roomHelpCommand, sourceCommand, wootCommand, badQualityCommand, downloadCommand, afksCommand, allAfksCommand, statusCommand, unhookCommand, dieCommand, reloadCommand, lockCommand, unlockCommand, swapCommand, popCommand, pushCommand, overplayedCommand, whyMehCommand, skipCommand, commandsCommand, resetAfkCommand, forceSkipCommand, fbCommand, cmdHelpCommand, protectCommand, disconnectLookupCommand, voteRatioCommand, avgVoteRatioCommand];
+  cmds = [hugCommand, tacoCommand, cookieCommand, icecreamCommand, punishCommand, whyWootCommand, themeCommand, rulesCommand, roomHelpCommand, sourceCommand, wootCommand, badQualityCommand, downloadCommand, afksCommand, allAfksCommand, statusCommand, unhookCommand, dieCommand, reloadCommand, lockCommand, unlockCommand, swapCommand, popCommand, pushCommand, overplayedCommand, whyMehCommand, skipCommand, commandsCommand, resetAfkCommand, forceSkipCommand, fbCommand, cmdHelpCommand, protectCommand, disconnectLookupCommand, voteRatioCommand, avgVoteRatioCommand];
 
   chatCommandDispatcher = function(chat) {
     var c, cmd, _i, _len, _results;
