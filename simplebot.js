@@ -859,8 +859,8 @@
       var msg, name, r, user;
       msg = this.msgData.message;
       r = new RoomHelper();
-      if (msg.length > 10) {
-        name = msg.substr(10);
+      if (msg.length > 11) {
+        name = msg.substr(11);
         user = r.lookupUser(name);
         if (user === false) {
           API.sendChat("/me punishes @" + this.msgData.from + " for getting the syntax wrong.");
