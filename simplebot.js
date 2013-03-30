@@ -859,8 +859,8 @@
       var msg, name, r, user;
       msg = this.msgData.message;
       r = new RoomHelper();
-      if (msg.length > 8) {
-        name = msg.substr(8);
+      if (msg.length > 4) {
+        name = msg.substr(4);
         user = r.lookupUser(name);
         if (user === false) {
           API.sendChat("/me slaps @" + this.msgData.from + " for getting the syntax wrong.");
