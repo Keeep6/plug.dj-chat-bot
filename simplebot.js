@@ -717,7 +717,7 @@
 
     
     Command.prototype.init = function() {
-      this.command = 'user';
+      this.command = 'icecream';
       this.parseType = 'startsWith';
       return this.rankPrivelege = 'user';
     };
