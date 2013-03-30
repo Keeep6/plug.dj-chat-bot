@@ -637,7 +637,7 @@
             resp = "Explains to users why they should be mehing every song";
             break;
           case "compliment":
-            resp = "Compliments the user on their song";
+            resp = "Compliments the user on their song.  Syntax: compliment @user";
             break;
           case "/skip":
             resp = "Mod only command.  Skips song.  Works for skipping invisible DJs.";
@@ -859,8 +859,8 @@
       var msg, name, r, user;
       msg = this.msgData.message;
       r = new RoomHelper();
-      if (msg.length > 11) {
-        name = msg.substr(11);
+      if (msg.length > 10) {
+        name = msg.substr(10);
         user = r.lookupUser(name);
         if (user === false) {
           API.sendChat("/me punishes @" + this.msgData.from + " for getting the syntax wrong.");
