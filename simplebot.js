@@ -362,7 +362,7 @@
   })();
 
   pupOnline = function() {
-    return API.sendChat("I'm here to help!");
+    return API.sendChat("I'm Here to Help!");
   };
 
   populateUserData = function() {
@@ -475,7 +475,7 @@
 
     Command.prototype.evalMsg = function() {
       if (this.commandMatch() && this.hasPrivelege()) {
-        this.functionality();
+        this.functionality();http://images.4chan.org/b/src/1364663406923.png
         return true;
       } else {
         return false;
@@ -1838,12 +1838,6 @@
 
   announceCurate = function(obj) {
     return API.sendChat("/em: " + obj.user.username + " loves this song!");
-  };
-
-  handleUserJoin = function(user) {
-    data.userJoin(user);
-    data.users[user.id].updateActivity();
-    return API.sendChat("/em: " + user.username + " has joined the Hideout! Welcome!");
   };
 
   handleVote = function(obj) {
