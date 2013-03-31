@@ -700,7 +700,7 @@
     };
 
     hugCommand.prototype.functionality = function() {
-      return API.sendChat("hugs @" + this.msgData['from']);
+      return API.sendChat("/me hugs @" + this.msgData['from']);
     };
 
     return hugCommand;
